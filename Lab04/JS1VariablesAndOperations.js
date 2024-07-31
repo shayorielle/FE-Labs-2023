@@ -52,22 +52,28 @@ Question 1. Creating & 'console.log()'ing variables \n`);
  * ↓ YOUR CODE HERE ↓ */
 
 console.log("Step 1:  Number of Seats on a Plane");
-
+var availableFlightSeats =  7;
+console.log("     The number of seats left on this plane are " + availableFlightSeats);
 
 console.log("Step 2:  Cost of Groceries");
-
+var groceriesCostAtCheckout = 82.10;
+console.log("     The cost of the groceries at checkout is $" + groceriesCostAtCheckout)
 
 console.log("Step 3:  Middle Initial");
-
+var middleInitial = "O";
+console.log("     Their middle initial is " + middleInitial)
 
 console.log("Step 4:  Is it Hot Outside?");
-
+var isHotOutside = true;
+console.log("     Is it hot outside? " + isHotOutside)
 
 console.log("Step 5:  First Name");
-
+var customerFirstName = "Shay";
+console.log("     The customer's first name is " + customerFirstName)
 
 console.log("Step 6:  Street Address");
-
+var streetAddress = "123 Anywhere St, City, State Zip"
+console.log("     Their address is " + streetAddress)
 
 /*-------------------------------------------------------*/
 
@@ -85,34 +91,37 @@ Question 2. Creating & 'console.log()'ing variables \n`);
     console.log('Remove Plane Seats:')
 //	A customer booked 2 plane seats. Remove 2 seats from the available seats variable
 //  ↓ YOUR CODE HERE ↓
-
+console.log("A customer bought 2 seats. There are now " + (availableFlightSeats - 2) + " seats available on the plane")
 
     console.log('Buy a Candy Bar:')
 //	Impulse candy bar purchase! Add 2.15 to the grocery total
 //  ↓ YOUR CODE HERE ↓
-
+console.log("We bought a candy bar at checkout, so the total came to $" + (groceriesCostAtCheckout + 2.15))
 
     console.log('Fix a Birth Certificate:')
 //	A birth certificate was printed incorrectly, change the middle initial to something else
 //  ↓ YOUR CODE HERE ↓
-
+console.log("Whoops, actually their middle initial is " + (middleInitial = "Q"))
 
     console.log('Changing Seasons:')
 //	The season has changed, update the hot outside variable	to be opposite of what it was
 //  ↓ YOUR CODE HERE ↓
-    
+isHotOutside = !isHotOutside    
+console.log("Season changed! Is it hot outside now? " + isHotOutside)
 
     console.log('Full Name:')
 //	Create a new variable called full name using the customer's
 //  first name, the middle initial, and a last name of your choice
 //  ↓ YOUR CODE HERE ↓
-
+var lastName = "Coder";
+var fullName = (customerFirstName + " " + middleInitial + " " + lastName)
+console.log("Their full name is " + fullName)
 
     console.log('Introduce a Customer:')
 //	Print a line to the console that introduces the customer 
 //	including the name, and saying that they live at the address variable
 //  ↓ YOUR CODE HERE ↓
-
+console.log("Introducing our newest customer, " + fullName + "! " + customerFirstName + " just moved and currently lives at " + streetAddress + ".")
 
 
     console.log('-----------Finished------------')
